@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.face {
+  height: 500px;
+  width: 500px;
+  background-color: yellow;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.eyes-container {
+  /* border: 2px solid black; */
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.eye {
+  height: 150px;
+  width: 150px;
+  border: 1px solid black;
+  background-color: white;
+  border-radius: 50%;
+  position: relative;
+  animation-name: eyeRotate;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes eyeRotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.eye-ball {
+  height: 80px;
+  width: 80px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  left: 30px;
+}
+.mouth {
+  height: 150px;
+  width: 150px;
+  background-color: black;
+  margin: 0 auto;
+  border-radius: 0 0 50% 50%;
+}

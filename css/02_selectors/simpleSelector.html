@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      *{
+        font-family: sans-serif;
+        background-color: rgb(212, 199, 199);
+      }
+      #head {
+        background-color: yellow;
+      }
+
+      .content {
+        background-color: aqua;
+      }
+      .text-red{
+        color: red;
+      }
+       
+      h4{
+        background-color: rgb(119, 119, 230);
+      }
+      #navbar, footer, .page_header{
+        background-color: rgb(246, 155, 235);
+        color: darkgreen;
+      }
+           
+    </style>
+  </head>
+  <body>
+    <!-- 5 types of Selectors
+      1) combinator
+      2) simple
+      3) pseudo class
+      4) pseudo element
+      5) attribute-->
+
+    <h1>Learn Simple Selector</h1>
+
+    <!-- there are 5 types 
+      1) id: use to target unique element. symbol is:#
+      2) class: use to target multiple similar or differnce element.symbol is:dot(.)
+      3) element: used to target multiple similar element.symbol is:tagname
+      4) group: used to group multiple elements.symbol is:comma(,)
+      5) universal: used to target all element in groups.symbol is: (*)-->
+
+    <h1 id="head">Style me using ID</h1>
+
+    <h2 class="content">style me using class</h2>
+    <h3 class="content text-red">style me using class</h3>  <!-- using space seprated value -->
+    <p class="content">style me using class</p>
+
+    <h4>Style me using Element Selector</h4>
+    <h4>Style me using Element Selector</h4>
+    <h4>Style me using Element Selector</h4>
+
+    <nav id="navbar">i am nav</nav> 
+    <footer>i am footer</footer>
+    <header class="page_header">i am header</header>
+  
+  </body>
+</html>

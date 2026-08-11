@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- ! pseudo class denoted by:  column-->
+
+    <style>
+      button {
+        transition: 0.5s;
+      }
+
+      button:hover {
+        background-color: black;
+        color: white;
+        transform: scale(1.5);
+        transition: 0.2s;
+      }
+
+      button:active {
+        background-color: royalblue;
+      }
+
+      a:link {
+        /* use only in anchor tag */
+        color: rgb(222, 32, 44);
+      }
+
+      a:visited {
+        /* use only in anchor tag */
+        color: aqua;
+      }
+
+      a:active {
+        background-color: blue;
+      }
+
+      ol>li:first-child{
+        background-color: rgb(137, 247, 137);
+      }
+      ol>li:last-child{
+        background-color: rgb(198, 145, 248);
+      }
+
+      ol>li:nth-child(3){
+        background-color: rgb(241, 198, 117);
+      }
+
+      div>nav:first-of-type{
+        background-color: rgb(126, 214, 218);
+      }
+
+      div>nav:last-of-type{
+        background-color: rgb(157, 229, 85);
+      }
+
+      div>nav:nth-of-type(3){
+        background-color: rgb(185, 118, 185);
+      }
+
+    </style>
+  </head>
+  <body>
+    <h1>Learn Pseudo-Class Selectors :</h1>
+    <button>Submit</button>
+
+    <br />
+
+    <a href="https://www.ajio.com">ajio</a>
+    <a href="https://www.myntra.com">myntra</a>
+
+    <ol>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JS</li>
+      <li>REACT</li>
+      <li>TAILWIND</li>
+    </ol>
+
+    <div>
+      <header>header1</header>
+      <nav>nav 1</nav>
+      <section>section 1</section>
+      <header>header 2</header>
+      <nav>nav 2</nav>
+      <nav>nav 3</nav>
+      <section>section 2</section>
+      <header>header 3</header>
+      <nav>nav 4</nav>
+    </div>
+
+    <!-- ? `  what is differnce b/w first-child and first-of-type -->
+  </body>
+</html>

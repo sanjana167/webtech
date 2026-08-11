@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        div[name]{
+            background-color: yellow;
+        }
+
+        div[name="box2"]{
+            background-color: rgb(242, 78, 78);
+        }
+
+         /* div[name="box-wrapper"]{
+            background-color: rgb(76, 241, 67);
+        } */
+
+         div[name |="box"]{
+            background-color: rgb(74, 250, 94);
+        }
+
+         div[name~="card"]{
+            background-color: rgb(243, 88, 176);
+        }
+
+        div[name^="n"]{
+            background-color: rgb(53, 255, 188);
+        }
+
+        div[name$="lay"]{
+            background-color: rgb(176, 23, 223);
+        }
+
+        div[name*="oo"]{
+            background-color: rgb(83, 106, 255);
+        }
+
+        
+
+    </style>
+  </head>
+  <body>
+    <h1>Learn Attribute Selectors</h1>
+
+    <div name="box1">box 1</div>
+    <div name="box2">box 2</div>
+    <div name="box-wrapper">box 3</div>
+    <div name="card container">box 4</div>
+    <div name="navbar">box 5</div>
+    <div name="overlay">box 6</div>
+    <div name="footer">box 7</div>
+  </body>
+</html>

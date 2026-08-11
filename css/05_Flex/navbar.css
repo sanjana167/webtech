@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.navbar {
+  height: 70px;
+  width: 100%;
+  background-color: royalblue;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 100px;
+  color: whitesmoke;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+.nav-links > a {
+  margin: 0 20px;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.nav-links > a:hover {
+  display: inline-block;
+  transform: scale(1.1);
+}

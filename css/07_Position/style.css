@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+div {
+  height: 200px;
+  width: 200px;
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box1 {
+  background-color: yellow;
+  position: static; /* DEFAULT VALUE */
+  top: 200px;
+  left: 100px;
+}
+
+.box2 {
+  background-color: pink;
+  position: sticky;
+  top: 0; /* THRESHOLD POINT */
+}
+
+.box3 {
+  background-color: lightblue;
+  position: fixed;
+  top: 0;
+  right: 0;
+  transform: rotate(270deg);
+}
+
+.box4 {
+  background-color: aqua;
+  position: relative;
+  top: 50px;
+  left: calc(100% - 200px);
+}
+
+.parent {
+  height: 400px;
+  width: 600px;
+  background-color: orange;
+  position: relative;
+}
+.box5 {
+  background-color: lightgreen;
+  position: absolute;
+  right: 0;
+}

@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <table border="1" cellpadding="10">
+        <tr>
+          <td><label for="username">UserName</label></td>
+          <td>
+            <input
+              type="text"
+              id="username"
+              placeholder="Enter Username"
+              name="username"
+            />
+          </td>
+        </tr>
+
+        <tr>
+          <td><label for="email">Email</label></td>
+          <td>
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter Email"
+              name="email"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td> <label for="Password">Password</label></td>
+          <td><input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Enter Password"
+        /></td>
+        </tr>
+
+        <tr>
+            <td><label for="country">Country</label></td>
+            <td><select name="country" id="country">
+          <option value="India">India</option>
+          <option value="China">China</option>
+          <option value="USA">USA</option>
+          <option value="America">America</option>
+        </select></td>
+        </tr>
+
+        <tr>
+            <td><label for="course">Choose Your Course</label></td>
+            <td> <input type="text" id="course" name="course" list="courseList" />
+
+        <datalist id="courseList">
+          <option value="java">java</option>
+          <option value="mern">mern</option>
+          <option value="python">python</option>
+        </datalist></td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

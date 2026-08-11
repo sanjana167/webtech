@@ -1,0 +1,18 @@
+/* @import url("./basic.css"); */
+
+html{
+    --primary:pink;
+}
+h3{
+
+    /* css variables  Local variable*/
+    --qsp:aqua;
+    --b7:green;
+    background-color: var(--qsp);
+    color: var(--b7);
+}
+
+div{
+    background-color: var(--primary) !important;
+    /* background-color: greenyellow !important; */
+}

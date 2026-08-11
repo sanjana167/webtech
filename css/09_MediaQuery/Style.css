@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* MOBILE-FIRST APPROACH */
+h1 {
+  background-color: lightgray;
+  padding: 5px;
+  text-align: center;
+  font-size: 12px;
+  transition: 1s;
+}
+
+/* MOBILE - S */
+@media (min-width: 320px) {
+  h1 {
+    background-color: lightblue;
+    font-size: 14px;
+    padding: 8px;
+  }
+}
+
+/* MOBILE - M */
+@media (min-width: 375px) {
+  h1 {
+    background-color: lightgreen;
+    font-size: 16px;
+    padding: 10px;
+  }
+}
+
+/* MOBILE - L */
+@media (min-width: 425px) {
+  h1 {
+    background-color: lightcyan;
+    font-size: 18px;
+    padding: 12px;
+  }
+}
+
+/* TABLET */
+@media (min-width: 768px) {
+  h1 {
+    background-color: lightskyblue;
+    font-size: 20px;
+    padding: 14px;
+  }
+}
+
+/* LAPTOP */
+@media (min-width: 1024px) {
+  h1 {
+    background-color: pink;
+    font-size: 22px;
+    padding: 16px;
+  }
+}
+
+/* LAPTOP - L */
+@media (min-width: 1440px) {
+  h1 {
+    background-color: lime;
+    font-size: 28px;
+    padding: 20px;
+  }
+}

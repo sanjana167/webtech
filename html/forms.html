@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <fieldset>
+      <legend>Registration Form</legend>
+      <!-- ? <form action="/url " method="post/"></form>  interview purpose-->
+      <form>
+        <label for="Username">Username</label>
+        <input
+          type="text"
+          id="Username"
+          placeholder="Enter Username"
+          name="Username"
+        />
+        <br />
+
+        <!-- ?what is diff b/w placeholder and  value -->
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter Email" name="email" />
+        <br />
+
+        <label for="Password">Password</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Enter Password"
+        />
+        <br />
+
+        <label for="country">Country</label>
+        <select name="country" id="country">
+          <option value="India">India</option>
+          <option value="China">China</option>
+          <option value="USA">USA</option>
+          <option value="America">America</option>
+        </select>
+        <br />
+
+        <label for="course">Choose Your Course</label>
+        <input type="text" id="course" name="course" list="courseList" />
+
+        <datalist id="courseList">
+          <option value="java">java</option>
+          <option value="mern">mern</option>
+          <option value="python">python</option>
+        </datalist>
+        <br />
+
+        <label for="gender">Gender</label>
+
+        <label for="male">Male</label>
+        <input type="radio" id="male" name="gender" value="male" />
+
+        <label for="female">Female</label>
+        <input type="radio" id="female" name="gender" value="female" />
+
+        <label for="others">Others</label>
+        <input type="radio" id="others" name="gender" value="others" /> <br />
+
+        <label for="resume">Resume</label>
+        <!--! ctrl + Space -->
+        <input
+          type="file"
+          name="resume"
+          id="resume"
+          multiple
+          accept=".docx,.pdf"
+        />
+        <br />
+
+        <label for="hobbies">Hobbies</label>
+        <label for="cricket">Cricket</label>
+        <input type="checkbox" name="hobbies" id="cricket" value="cricket" />
+
+        <label for="coding">Coding</label>
+        <input type="checkbox" name="hobbies" id="hobbies" value="coding" />
+        <br />
+
+        <label for="dob">DOB</label>
+        <input
+          type="date"
+          name="dob"
+          id="dob"
+          max="2026-07-31"
+          min="2000-01-01"
+        />
+        <br />
+
+        <label for="phone">Phone No</label>
+        <input
+          type="tel"
+          name="phone"
+          id="phone"
+          minlength="10"
+          maxlength="10"
+        />
+        <br />
+
+        <label for="quantity">Quantity</label>
+        <input type="number" name="quantity" id="quantity" min="0" max="10" />
+        <br />
+
+        <label for="range"> Select Range</label>
+        <input
+          type="range"
+          name="range"
+          id="range"
+          min="0"
+          max="100"
+          value="90"
+        />
+        <br />
+
+        <br />
+
+        <button>Submit</button>
+
+        <!--? what is the use of name attributes -->
+        <!--? differnce between select tag and dataList tag -->
+      </form>
+    </fieldset>
+  </body>
+</html>

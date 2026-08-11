@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 80vh;
+  width: 80%;
+  background-color: royalblue;
+  /* display: flex; */
+  flex-direction: row; /* default */
+
+  /* (x-axis) flex-start, flex-end, center, space-between, space-around, space-evenly */
+  justify-content: center;
+
+  /* (y-axis) flex-start, flex-end, center */
+  align-items: center;
+
+  gap: 50px;
+
+  flex-wrap: wrap;
+}
+.item {
+  height: 100px;
+  width: 100px;
+  background-color: white;
+  font-size: 30px;
+  border: 2px solid black;
+}

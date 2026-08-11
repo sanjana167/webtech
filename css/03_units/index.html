@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Units</title>
+    <style>
+      .box1 {
+        height: 200px;
+        width: 200px;
+        border: 5px solid black; /* width, style, color */
+        background-color: orangered;
+      }
+
+      .box2 {
+        height: 100vh;
+        width: 50vw;
+        background-color: hotpink;
+      }
+
+      .box3 {
+        height: 50vh;
+        width: 50vw;
+        background-color: aqua;
+      }
+
+      .child {
+        height: 50%;
+        width: 50%;
+        background-color: blueviolet;
+      }
+
+      .box4{
+        height: 1em;
+        width: 1em;
+        background-color: green;
+        font-size: 50px;
+      }
+
+      html{
+        font-size: 100px;
+      }
+
+      .box5{
+        height: 1rem;
+        width: 1rem;
+        background-color: darkorange;       
+      }
+    </style>
+  </head>
+  <body>
+    <!--! there are 5 types  of units 
+     1) px -------------fixed/absolute unit
+     2) vh and vw ------relative unit
+     3) % --------------relative unit
+     4) em -------------relative unit
+     5) rem ------------relative unit
+     -->
+
+    <!-- <div  class="box1">pixel unit example</div> -->
+
+    <!-- <div class="box2"></div> -->
+
+    <!-- <div class="box3">
+      <div class="child"></div>
+    </div> -->
+
+    <!-- <div class="box4"></div> -->
+
+    <div class="box5"></div>
+
+    <!--? what is differnce between em and rem units -->
+    <!--todo  similiarity
+     em----1em  = 16px (depend on current element font size)
+     rem---1rem = 16px (depend on root element font size ) 
+     -->
+  </body>
+</html>
